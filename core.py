@@ -44,9 +44,14 @@ class Example(metaclass=MyMetaClass):
         print('DEL x')
 
 
-if __name__ == '__main__':
+def main():
+    """Run main function."""
     ex = Example()
     ex.x = 255
     print(ex.x)
     del ex.x
     print(ex.y)
+
+
+if __name__ == '__main__':
+    main()
